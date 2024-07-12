@@ -221,8 +221,17 @@ local components = {
   },
 }
 
-return {
+local feline_opts = {
   components = components,
   theme = one_monokai,
   vi_mode_colors = vi_mode_colors,
+}
+
+return {
+  {
+    'freddiehaddad/feline.nvim',
+    config = function()
+      require('feline').setup(feline_opts)
+    end,
+  }
 }

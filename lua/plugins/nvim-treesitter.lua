@@ -1,4 +1,4 @@
-return {
+local opts = {
   ensure_installed = {
     "vim",
     "lua",
@@ -18,4 +18,13 @@ return {
   sync_install = false,
   highlight = { enable = true },
   indent = { enable = true },
+}
+
+return  {
+  "nvim-treesitter/nvim-treesitter",
+  build = ":TSUpdate",
+  config = function()
+    local configs = require("nvim-treesitter.configs")
+    configs.setup(opts)
+  end,
 }

@@ -1,5 +1,5 @@
-return {
-	filters = {
+local full_opts = {
+  filters = {
     dotfiles = true,
     exclude = { vim.fn.stdpath "config" .. "/lua/custom", ".gitignore",".env" },
   },
@@ -71,5 +71,19 @@ return {
         },
       },
     },
-  },}
+  },
+}
 
+return  {
+  {
+    "nvim-tree/nvim-tree.lua",
+    version = "*",
+    lazy = false,
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+    },
+    config = function()
+      require("nvim-tree").setup(full_opts)
+    end,
+  }
+}
