@@ -4,7 +4,28 @@ return {
   priority = 1000,
   lazy = false,
   config = function()
-    -- load the colorscheme here
-    vim.cmd.colorscheme('catppuccin-macchiato')
+    require("catppuccin").setup({
+      flavor = 'macchiato',
+      background = {
+        light = "macchiato",
+        dark = "macchiato",
+      },
+      integrations = {
+        cmp = true,
+        gitsigns = true,
+        nvimtree = true,
+        treesitter = true,
+        notify = false,
+        mini = {
+          enabled = true,
+          indentscope_color = "",
+        },
+      },
+      styles = {
+        types = { "bold" },
+        functions = { "italic" }
+      }
+    })
+    vim.cmd.colorscheme('catppuccin')
   end,
 }
