@@ -23,7 +23,7 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		lazy = false,
-    depends = { "" },
+		depends = { "" },
 		config = function()
 			require("configs.lspconfig").defaults()
 		end,

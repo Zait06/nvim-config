@@ -20,12 +20,10 @@ local function mapping()
 
 	map({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts("Code action"))
 	map("n", "glr", vim.lsp.buf.references, opts("Show references"))
-
 end
 
 -- export on_attach & capabilities
-M.on_attach = function()
-end
+M.on_attach = function() end
 
 -- disable semanticTokens
 M.on_init = function(client, _)
@@ -57,7 +55,7 @@ M.capabilities.textDocument.completion.completionItem = {
 M.defaults = function()
 	local lspconfig = require("lspconfig")
 
-mapping()
+	mapping()
 
 	lspconfig.lua_ls.setup({
 		on_attach = M.on_attach,
