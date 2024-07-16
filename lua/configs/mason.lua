@@ -8,6 +8,8 @@ return {
 		"clangd",
 		"clang-format",
 		"pyright",
+    "black",
+    "mypy",
 		"eslint_d",
 	},
 }
