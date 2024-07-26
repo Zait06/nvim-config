@@ -11,5 +11,6 @@ return {
     "black",
     "mypy",
 		"eslint_d",
+    -- "dartls",
 	},
 }
