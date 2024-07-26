@@ -15,10 +15,9 @@ vim.g.mapleader = " "
 
 vim.wo.relativenumber = true
 vim.wo.number = true
+vim.wo.cursorline = true
 
 --Mapping
-vim.keymap.set("n", "<leader>e", vim.cmd.NvimTreeFocus)
-vim.keymap.set("n", "<C-b>", vim.cmd.NvimTreeToggle)
 vim.keymap.set("n", "<A-h>", "<C-w>h", { desc = "Move to right window" })
 vim.keymap.set("n", "<A-l>", "<C-w>l", { desc = "Move to left window" })
 vim.keymap.set("n", "<A-k>", "<C-w>k", { desc = "Move to up window" })
