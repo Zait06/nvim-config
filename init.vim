@@ -1,5 +1,5 @@
-so ./maps.vim
-so ./vim-plug/plugins.vim
+so ~/.config/nvim/maps.vim
+so ~/.config/nvim/vim-plug/plugins.vim
 
 syntax on
 
@@ -50,3 +50,6 @@ set nobackup
 
 " Do not let cursor scroll below or above N number of lines when scrolling.
 set scrolloff=10
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='wombat'

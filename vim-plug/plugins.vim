@@ -11,5 +11,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 	" status bar
 	Plug 'itchyny/lightline.vim'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
