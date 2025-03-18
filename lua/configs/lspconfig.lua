@@ -105,6 +105,11 @@ M.defaults = function()
 	lspconfig.tsserver.setup({
 		capabilities = capabilities,
 	})
+
+  -- cmake
+  lspconfig.cmake.setup({
+    capabilities = capabilities,
+  })
 end
 
 return M

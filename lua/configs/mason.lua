@@ -8,9 +8,10 @@ return {
 		"clangd",
 		"clang-format",
 		"pyright",
-    "black",
-    "mypy",
+		"black",
+		"mypy",
 		"eslint_d",
-    -- "dartls",
+    "cmake-language-server"
+		-- "dartls",
 	},
 }
